@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "开始卸载番茄利器插件"
+echo "开始卸载ss插件"
 echo -e "停止相关进程--------------------------------------\c"
 /etc/init.d/ss-redir stop 1>/dev/null 2>&1
 /etc/init.d/ss-redir disable 1>/dev/null 2>&1
@@ -62,5 +62,5 @@ echo -e "[\e[32m完成\e[37m]"
 else
 mkdir -p /usr/bin/vendor/config
 fi
-echo -e "卸载番茄利器插件-----------------[\e[32m全部完成\e[37m]"
+echo -e "卸载ss插件-----------------[\e[32m全部完成\e[37m]"
 exit

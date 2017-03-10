@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "开始安装番茄利器插件"
+echo "开始安装ss插件"
 opkg update
 opkg install pdnsd
 /etc/init.d/pdnsd start
@@ -49,17 +49,17 @@ cp -a /etc/config/ss-redir.2.6.3.bak /etc/config/ss-redir
 rm -rf /etc/config/ss-redir.2.6.3.bak
 echo -e "[\e[32m完成\e[37m]"
 fi
-echo -e "番茄利器插件---------------------[\e[32m全部完成\e[37m]"
+echo -e "ss插件---------------------[\e[32m全部完成\e[37m]"
 rm -rf /usr/local/ss-redir.tar.gz
 rm -rf /tmp/ss-redir.tar.gz
 rm -rf /tmp/data/ss-redir.tar.gz		          	
 else
 echo -e "修改系统文件--------------------------------------[\e[31m失败\e[37m]"
-echo -e "番茄利器插件-------------------------[\e[31m失败\e[37m]"
+echo -e "ss插件-------------------------[\e[31m失败\e[37m]"
 fi
 else
 echo -e "[\e[31m失败\e[37m]"
-echo -e "番茄利器插件-------------------------[\e[31m失败\e[37m]"
+echo -e "ss插件-------------------------[\e[31m失败\e[37m]"
 fi
 cd /tmp
 rm -rf ThirdFlameTemp
